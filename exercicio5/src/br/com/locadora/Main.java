@@ -14,6 +14,8 @@ public class Main {
 		
 		int opcao;
 		
+		
+		
 		System.out.println("Digite o tipo de veiculo para locação");
 		System.out.println("1 - Veiculo de Passeio");
 		System.out.println("2 - Veiculo de Carga");

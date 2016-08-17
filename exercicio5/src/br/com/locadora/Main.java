@@ -13,6 +13,11 @@ public class Main {
 		Scanner leitor = new Scanner(System.in);
 		
 		int opcao;
+		
+		
+		
+		
+		
 				
 		System.out.println("Digite o tipo de veiculo para locação");
 		System.out.println("1 - Veiculo de Passeio");

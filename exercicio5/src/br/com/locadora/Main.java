@@ -10,6 +10,8 @@ public class Main {
 		VeiculoCarga f5000 = new VeiculoCarga();
 		Pessoa proprietario = new Pessoa();
 		
+		int test=0;
+		
 		Scanner leitor = new Scanner(System.in);
 		
 		int opcao;

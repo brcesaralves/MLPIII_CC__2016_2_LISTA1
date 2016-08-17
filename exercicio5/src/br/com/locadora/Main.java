@@ -6,7 +6,7 @@ public class Main {
 
 	public static void main(String[] args) {
 		
-		Veiculo sandero =  new VeiculoPasseio();
+		VeiculoPasseio sandero =  new VeiculoPasseio();
 		VeiculoCarga f5000 = new VeiculoCarga();
 		Pessoa proprietario = new Pessoa();
 		

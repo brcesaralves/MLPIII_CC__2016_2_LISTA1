@@ -6,7 +6,7 @@ public class Main {
 
 	public static void main(String[] args) {
 		
-		Veiculo veiculoPasseio =  new VeiculoPasseio();
+		VeiculoPasseio veiculoPasseio =  new VeiculoPasseio();
 		VeiculoCarga veiculoCarga = new VeiculoCarga();
 		Pessoa proprietario = new Pessoa();
 		
@@ -19,7 +19,7 @@ public class Main {
 		
 		
 				
-		System.out.println("Digite o tipo de veiculo para locaÁ„o");
+		System.out.println("Digite o tipo de veiculo para loca√ß√£o");
 		System.out.println("1 - Veiculo de Passeio");
 		System.out.println("2 - Veiculo de Carga");
 		opcao = leitor.nextInt();
@@ -59,7 +59,7 @@ public class Main {
 				
 				System.out.println("O veiculo possui Ar-Condicionado:");
 				System.out.println("1 - sim");
-				System.out.println("2 - n„o");
+				System.out.println("2 - n√£o");
 				
 				if(leitor.nextInt() == 1){
 					veiculoPasseio.setArCondicionado(true);

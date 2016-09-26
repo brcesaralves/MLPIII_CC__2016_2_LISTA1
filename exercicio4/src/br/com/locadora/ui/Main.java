@@ -1,6 +1,9 @@
-package br.com.locadora;
+package br.com.locadora.ui;
 
 import java.util.Scanner;
+
+import br.com.locadora.model.Autor;
+import br.com.locadora.model.Filme;
 
 public class Main {
 

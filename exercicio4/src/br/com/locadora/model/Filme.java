@@ -1,4 +1,4 @@
-package br.com.locadora;
+package br.com.locadora.model;
 
 public class Filme {
 	private String tipo;
@@ -7,17 +7,20 @@ public class Filme {
 	private double preco;
 	private Autor autor;
 	
+	
 	public double alugar(double preco,String tipo){
-		if(this.tipo.equals("lancamento")){
-			this.preco = (preco*0.2)+this.preco;
+		if(tipo.equals("lancamento")){
+			preco = (preco*0.2)+ preco;
 		}
 		else{
-			if(this.tipo.equals("infantil")){
-				this.preco = this.preco - (this.preco*0.4);
+			if(tipo.equals("infantil")){
+				preco = preco - (preco*0.4);
 			}
 		}
 		return preco;
 	}
+	
+	
 	public String getTipo() {
 		return tipo;
 	}

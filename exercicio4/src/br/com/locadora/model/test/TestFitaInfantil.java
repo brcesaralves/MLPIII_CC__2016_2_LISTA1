@@ -1,21 +1,18 @@
 package br.com.locadora.model.test;
 
 import br.com.locadora.model.Filme;
+import br.com.locadora.model.FitaInfantil;
 import junit.framework.TestCase;
 
-public class TestFilme extends TestCase{
-	
-	Filme filme = new Filme();
+public class TestFitaInfantil extends TestCase{
 	
 	public void testAlugar(){
 		
-		Filme filme = new Filme();
+		Filme filme = new FitaInfantil();
 		filme.setPreco(10.0);
 		
-		String tipo = "infantil";
+		assertEquals(filme.alugar(10.0), 6.0);
 		
-		assertEquals(filme.alugar(10.0, tipo), 6.0);
-				
 	}
 	
 }

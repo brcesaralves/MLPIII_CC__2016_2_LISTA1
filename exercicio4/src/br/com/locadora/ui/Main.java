@@ -4,20 +4,19 @@ import java.util.Scanner;
 
 import br.com.locadora.model.Autor;
 import br.com.locadora.model.Filme;
+import br.com.locadora.model.FitaLancamento;
 
 public class Main {
 
 	public static void main(String[] args) {
 		Scanner leitor = new Scanner(System.in);
-		Filme fita = new Filme();
+		Filme fita = new FitaLancamento();
 		Autor autor = new Autor();
 		
 		System.out.println("Digite o Titulo do filme.");
-		fita.setTipo(leitor.nextLine());
+		fita.setTitulo(leitor.nextLine());
 		System.out.println("Digite o categoria do filme");
 		fita.setCategoria(leitor.nextLine());
-		System.out.println("Digite o tipo da fita");
-		fita.setTipo(leitor.nextLine());
 		System.out.println("Digite o preco da fita.");
 		fita.setPreco(leitor.nextDouble());
 		leitor.nextLine();
@@ -26,7 +25,7 @@ public class Main {
 		autor.setNome(leitor.nextLine());
 		fita.setAutor(autor);
 		
-		System.out.println("Valor da locacao: " + fita.alugar(fita.getPreco(), fita.getTipo()));
+		System.out.println("Valor da locacao: " + fita.alugar(fita.getPreco()));
 		
 		leitor.close();
 		

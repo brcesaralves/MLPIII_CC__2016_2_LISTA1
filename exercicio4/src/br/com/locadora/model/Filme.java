@@ -1,32 +1,18 @@
 package br.com.locadora.model;
 
 public class Filme {
-	private String tipo;
 	private String titulo;
 	private String categoria;
 	private double preco;
 	private Autor autor;
 	
 	
-	public double alugar(double preco,String tipo){
-		if(tipo.equals("lancamento")){
-			preco = (preco*0.2)+ preco;
-		}
-		else{
-			if(tipo.equals("infantil")){
-				preco = preco - (preco*0.4);
-			}
-		}
+	public double alugar(double preco){
 		return preco;
 	}
 	
 	
-	public String getTipo() {
-		return tipo;
-	}
-	public void setTipo(String tipo) {
-		this.tipo = tipo;
-	}
+	
 	public String getTitulo() {
 		return titulo;
 	}
